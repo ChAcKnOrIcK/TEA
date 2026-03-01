@@ -156,9 +156,11 @@ body {
   }
 }
 
+/* Добавил от себя получается */
 @media (max-width: 860px) {
   .logo {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 154px;
   }
 
   .menu {
@@ -176,7 +178,14 @@ body {
 }
 
 @media (max-width: 768px) {
-  
+  .header__inner {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  .blockquote__text {
+    max-width: 640px;
+  }
 }
 
 @media (max-width: 480px) {
