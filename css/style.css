@@ -89,7 +89,7 @@ body {
 .top {
   background-image: url(../images/top-bj.jpg);
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom left;
   background-size: cover;
 }
 
@@ -200,6 +200,7 @@ body {
 
   .top__title {
     font-size: 40px;
+    line-height: normal;
   }
 
   .blockquote__text {
@@ -211,9 +212,52 @@ body {
 }
 
 @media (max-width: 480px) {
-  
+  .header__inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    margin-right: 80px;
+  }
+
+  .logo img {
+    width: 39px;
+  }
 }
 
 @media (max-width: 360px) {
-  
+  .header__inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    margin-right: 50px;
+  }
+
+  .user-actions__item-search {
+    margin-left: 0;
+  }
+
+  .top__inner {
+    min-height: 367px;
+  }
+
+  .top__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    
+  }
+
+  .top__text {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+
+  .blockquote__text {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    max-width: 340px;
+  }
 }
