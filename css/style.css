@@ -233,6 +233,19 @@ body {
   .blockquote__text {
     margin: 120px auto;
   }
+
+  .assortment {
+    margin-bottom: 120px;
+  }
+
+  .assortment__title {
+    margin-bottom: 30px;
+  }
+
+
+  .assortment__list {
+    gap: 0;
+  }
 }
 
 /* Добавил от себя получается */
@@ -317,6 +330,15 @@ body {
   .blockquote__text {
     max-width: 640px;
   }
+
+  .assortment__title {
+    margin-bottom: 40px;
+  }
+  
+  .assortment__list {
+    flex-wrap: wrap;
+    justify-content: center
+  }
 }
 
 @media (max-width: 680px) {
@@ -393,5 +415,9 @@ body {
     margin-top: 70px;
     margin-bottom: 80px;
     max-width: 340px;
+  }
+
+  .assortment__img {
+    max-width: 170px;
   }
 }
