@@ -16,6 +16,7 @@ a {
 button {
   padding: 0;
   border: none;
+  background-color: transparent
 }
 
 ul {
@@ -35,6 +36,7 @@ body {
   line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   /* font-family: 'Cormorant', serif; */
+  position: relative;
 }
 
 .header__inner {
@@ -55,6 +57,24 @@ body {
   height: 20px;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.menu--close {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: background-color .3s ease;
+}
+
+.menu--close.menu--open {
+  display: block;
 }
 
 .menu__btn span{
@@ -70,6 +90,13 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-left: 85px;
+  position: relative;
+  z-index: 3;
+}
+
+.mobile-nav,
+.menu__close {
+  display: none;
 }
 
 .user-actions {
@@ -158,10 +185,6 @@ body {
 
 /* Добавил от себя получается */
 @media (max-width: 860px) {
-  .logo {
-    margin-left: auto;
-    margin-right: 154px;
-  }
 
   .menu {
     order: -1;
@@ -172,8 +195,64 @@ body {
     display: flex;
   }
 
+  .logo {
+    margin-left: auto;
+    margin-right: 154px;
+  }
+
+  .mobile-nav,
+  .menu__close {
+    display: block;
+  }
+
+  .menu__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
   .menu__list {
-    display: none;
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 480px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    transition: transform 0.7s ease;
+  }
+
+  .menu__list.menu__list--open {
+    transform: translateY(0%);
+  }
+
+  .menu__item {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: 'Cormorant', serif;
+  }
+
+  .mobile-menu {
+    padding-top: 60px;
+    margin: 60px 30px;
+    border-top: 2px solid #F7F2EA;
+  }
+  
+  .mobile-menu__item {
+    margin-bottom: 35px;
+  }
+
+  .mobile-actions {
+    background-color: #F7F2EA;
+    height: 60px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -224,6 +303,10 @@ body {
   .logo img {
     width: 39px;
   }
+
+  .menu__list {
+    width: 360px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -247,7 +330,6 @@ body {
   .top__title {
     margin-bottom: 10px;
     font-size: 24px;
-    
   }
 
   .top__text {
