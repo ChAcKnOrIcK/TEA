@@ -503,6 +503,24 @@ body {
   .main-blog__link {
     margin-top: 60px;
   }
+  
+  .mailing-list {
+    padding: 60px 0;
+  }
+
+  .mailing-list__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .mailing-list__title {
+    text-align: center;
+  }
+
+  .mailing-list__text {
+    flex-basis: 780px;
+    text-align: center;
+  }
 }
 
 /* Добавил от себя получается */
