@@ -677,6 +677,10 @@ body {
     max-width: 376px;
     font-size: 16px;
   }
+
+  .main-blog__item:nth-child(even) {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -715,6 +719,40 @@ body {
 
   .reviews__item {
     flex-basis: 220px;
+  }
+
+  .main-blog {
+    padding: 60px 0px;
+  }
+
+  .main-blog__item-img {
+    max-width: 230px;
+  }
+
+  .mailing-list {
+    padding: 50px 0;
+  }
+
+  .mailing-list__inner {
+    gap: 30px 0;
+  }
+
+  .mailing-list__text {
+    flex-basis: 100%;
+    font-size: 13px;
+  }
+
+  .mailing-list__email {
+    width: 324px;
+    margin-right: 25px;
+  }
+
+  .mailing-list__btn {
+    padding: 10px 38px;
+  }
+
+  .prioritise {
+    padding: 60px 0;
   }
 }
 
