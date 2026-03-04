@@ -521,6 +521,14 @@ body {
     flex-basis: 780px;
     text-align: center;
   }
+
+  .prioritise {
+    padding: 120px 0;
+  }
+
+  .prioritise__list {
+    gap: 30px 210px;
+  }
 }
 
 /* Добавил от себя получается */
