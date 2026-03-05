@@ -653,6 +653,30 @@ body {
   .prioritise__list {
     gap: 30px 210px;
   }
+
+  .footer__inner {
+    margin-bottom: 55px;
+  }
+
+  .footer__blockqoute {
+    width: 270px;
+  }
+
+  .footer__blockqoute-text {
+    margin-top: 0;
+  }
+
+  .footer__contacts {
+    width: 270px;
+  }
+
+  .footer__nav-logo {
+    margin-right: 35px;
+  }
+
+  .footer__copy {
+    margin-right: 85px;
+  }
 }
 
 /* Добавил от себя получается */
